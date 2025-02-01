@@ -1,0 +1,280 @@
+.btn-secondary-container {
+  padding: 11px 34px;
+  border-radius: 30px;
+  border-width: 1px;
+  border-color: #FF0EFD;
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-secondary-container > p {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 0;
+}
+
+
+.button-secondary > p {
+  font-weight: 500;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+
+/* CSS */
+.button-secondary {
+  align-items: center;
+  appearance: none;
+  background-clip: padding-box;
+  background-color: initial;
+  background-image: none;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: Eina01,sans-serif;
+  font-size: 14px;
+  font-weight: 800;
+  justify-content: center;
+  line-height: 24px;
+  margin: 0;
+  min-height: 64px;
+  outline: none;
+  overflow: visible;
+  padding: 19px 26px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: auto;
+  word-break: keep-all;
+  z-index: 0;
+  min-width: 170px;
+}
+
+@media screen and (max-width: 400px) {
+  .button-secondary {
+    width: 150px !important;
+    min-width: 150px;
+  }
+}
+
+@media (min-width: 768px) {
+  .button-secondary {
+    padding: 19px 32px;
+  }
+}
+
+.button-secondary:before,
+.button-secondary:after {
+  border-radius: 80px;
+}
+
+.button-secondary:before {
+  background-color: #FF0EFD;
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+}
+
+.button-secondary:after {
+  background-color: initial;
+  background: linear-gradient(0.25turn, #110034, #110034);
+  bottom: 2px;
+  content: "";
+  display: block;
+  left: 2px;
+  overflow: hidden;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  transition: all 100ms ease-out;
+  z-index: -1;
+}
+
+.button-secondary:hover:not(:disabled):before {
+  background-color:#FF0EFD ;
+}
+
+.button-secondary:hover:not(:disabled):after {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition-timing-function: ease-in;
+  opacity: 0;
+}
+
+.button-secondary:active:not(:disabled) {
+  color: #ccc;
+}
+
+.button-secondary:active:not(:disabled):before {
+  background-color:#ab10ab ;
+
+}
+
+.button-secondary:active:not(:disabled):after {
+  background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  top: 4px;
+}
+
+.button-secondary:disabled {
+  cursor: default;
+  opacity: .24;
+}
+
+@media only screen and (min-width: 1400px) {
+  .btn-secondary-container {
+    padding: 11px 34px;
+    border-radius: 30px;
+    border-width: 1px;
+    border-color: #FF0EFD;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .btn-secondary-container > p {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+  }
+  
+  
+  
+  /* CSS */
+  .button-secondary {
+    align-items: center;
+    appearance: none;
+    background-clip: padding-box;
+    background-color: initial;
+    background-image: none;
+    border-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    flex-direction: row;
+    flex-shrink: 0;
+    font-family: Eina01,sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    justify-content: center;
+    line-height: 24px;
+    margin: 0;
+    min-height: 64px;
+    outline: none;
+    overflow: visible;
+    padding: 19px 26px;
+    pointer-events: auto;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+    width: auto;
+    word-break: keep-all;
+    z-index: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .button-secondary {
+      padding: 19px 32px;
+    }
+  }
+  
+  .button-secondary:before,
+  .button-secondary:after {
+    border-radius: 80px;
+  }
+  
+  .button-secondary:before {
+    background-color: #FF0EFD;
+    content: "";
+    display: block;
+    height: 100%;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -2;
+  }
+  
+  .button-secondary:after {
+    background-color: initial;
+    background: linear-gradient(0.25turn, #13023A, #13023A);
+    bottom: 2px;
+    content: "";
+    display: block;
+    left: 2px;
+    overflow: hidden;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    transition: all 100ms ease-out;
+    z-index: -1;
+  }
+  
+  .button-secondary:hover:not(:disabled):before {
+    background-color:#FF0EFD ;
+  }
+  
+  .button-secondary:hover:not(:disabled):after {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition-timing-function: ease-in;
+    opacity: 0;
+  }
+  
+  .button-secondary:active:not(:disabled) {
+    color: #FFF;
+  }
+  
+  .button-secondary:active:not(:disabled):before {
+    background-color:#ab10ab ;
+  
+  }
+  
+  .button-secondary:active:not(:disabled):after {
+    background-image: linear-gradient(#541a0f 0, #0c0d0d 100%);
+    bottom: 4px;
+    left: 4px;
+    right: 4px;
+    top: 4px;
+  }
+  
+  .button-secondary:disabled {
+    cursor: default;
+    opacity: .24;
+  }
+}

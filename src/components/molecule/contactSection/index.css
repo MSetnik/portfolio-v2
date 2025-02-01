@@ -1,0 +1,33 @@
+.contact-section-container {
+  margin-top: 40px;
+  position: inherit;
+}
+
+.contact-section-container > .subtitle, p {
+  margin-top: 7px;
+  line-height: 30px !important;
+}
+
+.contact-section-container > p > a:link {
+  color: white;
+}
+
+#email {
+  color: white;
+  z-index: 999;
+  position: relative;
+  text-decoration: underline #FF1398;
+  line-height: 20px;
+}
+
+.subtitle {
+  margin: 0 8px;
+  color: #FF1398;
+}
+
+.contact-section-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}

@@ -1,0 +1,25 @@
+.why-choose-card-container {
+  padding: 80px 50px;
+  background-color: #FAF8F4;
+  border-radius: 40px;
+  width: 80%;
+}
+
+.why-choose-card-title {
+  font-size: 26px;
+  line-height: 45px;
+  color: #000;
+  font-weight: 600;
+}
+
+.why-choose-card-text {
+  font-size: 22px;
+  line-height: 40px;
+  color: #000;
+  font-weight: normal;
+}
+
+.why-choose-card-container:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}

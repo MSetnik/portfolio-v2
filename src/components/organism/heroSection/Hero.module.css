@@ -1,0 +1,276 @@
+.hero-main-container {
+  overflow: hidden;
+  height: 100vh;
+  background-color:#101010;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 0px;
+  padding-left: 33px;
+  padding-right: 33px;
+  /* padding-bottom: 30px; */
+  text-align: center;
+  align-items: center;
+  position: relative;
+}
+
+
+
+.hero-image-up-container > img, .hero-image-down-container > img {
+  /* width: 100%; */
+  height: 100%;
+}
+
+.hero-sub-title {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.hero-image-container-big {
+  display: none;
+}
+
+.hero-main-title, .hero-sub-title {
+  color: #FFF;
+}
+
+.hero-main-title {
+  font-size: 65px;
+  line-height: 72px;
+  font-weight: bold;
+}
+
+.hero-demo-btn-container {
+  position: absolute;
+  transition: all .1s ease;
+
+}
+
+.hero-demo-btn-container:hover {
+  cursor: pointer;
+  transform: scale(1.3);
+  transition: all .1s ease;
+}
+
+.hero-reviews-container {
+  position: absolute;
+  right: 8%;
+  bottom: 8%;
+}
+
+
+.hero-demo-btn-container {
+  position: absolute;
+  right: 15%;
+}
+
+.infoText {
+  text-align: start;
+}
+
+
+
+@media only screen and (min-width: 300px) and (max-width: 678px) {
+  .hero-main-container {
+    overflow: hidden;
+    /* height: 100vh; */
+    height: 100vh;
+    /* background-color: #FAF8F4; */
+    background-image: url('../../../assets/weddingCamera/hero-image-phone.png');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 0px;
+    padding-left: 24px;
+    padding-right: 24px;
+    /* padding-bottom: 30px; */
+    text-align: start;
+    align-items: center;
+  }
+
+
+  .hero-content-container {
+    margin-top: -15%;
+  }
+
+
+  .hero-sub-title {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+
+  .hero-main-title {
+    font-size: 40px;
+    line-height: 43px;
+    font-weight: bold;
+  }
+
+  .hero-demo-btn-container {
+    position: absolute;
+    right: 35%;
+    scale: 0.7;
+    visibility: hidden;
+  }
+
+  .hero-demo-btn-container:hover {
+    cursor: pointer;
+  }
+
+  .hero-reviews-container {
+    position: absolute;
+    bottom: 10px;
+    right: -24px;
+    scale: 0.7;
+  }
+}
+
+@media only screen and (min-width: 670px) and (max-width: 1024px) {
+  .hero-main-container {
+    overflow: hidden;
+    justify-content: center;
+    align-items: start;
+    /* background-color: #FAF8F4; */
+    background-image: url('../../../assets/weddingCamera/hero-image-tablet.png');
+    background-size: cover;
+  }
+
+  .hero-content-container {
+    width: 80%;
+    margin-top: -15%;
+
+  }
+
+  .hero-main-title {
+    font-size: 51px;
+    line-height: 62px;
+    text-align: start;
+  } 
+ 
+  .hero-sub-title {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: start;
+  } 
+
+  .hero-reviews-container { 
+    right: 24px;
+  
+  }
+
+  .hero-demo-btn-container {
+    right: 24px;
+    bottom: 30%;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero-main-container {
+    flex-direction: row;
+    padding-left:  100px;
+    padding-right: 35px;
+    align-items: center;
+  }
+  
+  .hero-content-container {
+    width: 80%;
+  }
+
+  .hero-image-down-container, .hero-image-up-container {
+    display: none;
+  }
+
+  .hero-image-container-big {
+    display: flex;
+    width: 50%;
+    height: 100vh;
+    justify-content: end;
+  }
+
+  .hero-main-title {
+    font-size: 64px;
+    line-height: 72px;
+    text-align: start;
+  } 
+ 
+  .hero-sub-title {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: start;
+  } 
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  .hero-main-container {
+    background-image: url('../../../assets/weddingCamera/hero-image-laptop.png');
+    background-size: cover;
+  }
+
+  .hero-content-container {
+    width: 80%;
+  }
+  
+  .infoText {
+    margin-bottom: 24px;
+  }
+
+  .heroBtnsContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-top: 24px;
+  }
+
+
+  .heroAboutMe {
+    position: absolute;
+    bottom: 10%;
+    right: 8%;
+    width: 40%;
+  }
+  
+}
+
+
+@media only screen and (min-width: 1441px) {
+  .hero-main-container {
+    background-image: url('../../../assets/weddingCamera/hero-image-laptop.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100lvw;
+    padding: 0 10%
+  }
+
+   .hero-reviews-container { 
+    right: 10%;
+  
+  }
+
+  .hero-demo-btn-container {
+    right: 10%;
+    bottom: 30%;
+    scale: 1.5;
+  }
+
+  .infoText {
+    margin-bottom: 24px;
+  }
+
+  .heroBtnsContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    margin-top: 24px;
+  }
+
+  .heroAboutMe {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40%;
+  }
+}

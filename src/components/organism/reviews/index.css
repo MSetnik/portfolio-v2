@@ -1,0 +1,359 @@
+.reviews-container {
+  padding: 70px 0px;
+}
+
+.reviews-content-container {
+  display: flex;
+  flex:1;
+  flex-direction: row;
+}
+
+.reviews-title-container {
+  padding: 0 25px 0 0;
+  text-align: center;
+  width: 50%;
+  position: relative;
+}
+
+.reviews-container-title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+
+.reviews-container-text {
+  margin-bottom: 30px;
+}
+
+.reviews-get-the-app-container {
+  background-color: #EDEBE9;
+  padding: 24px;
+  border-radius: 20px;
+}
+
+
+.review-item-title {
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+
+}
+
+.scroll-review {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  width: 100%;
+  gap: 20px; /* Optional: to add space between items */
+  margin-top: 30px;
+}
+
+.scroll-view-review-container {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.scroll-view-button {
+  position: absolute;
+  display: none;
+  margin-top: 40px;
+  background-color: #E3D9C6;
+  border-radius: 500px;
+  padding: 11px;
+}
+
+.btn-prev{
+  left: 19%;
+}
+
+.btn-next{
+  right: 19%;
+}
+
+.scroll-review::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}
+
+
+@media only screen and (max-width: 678px) and (min-width: 300px) {
+  .reviews-content-container {
+    flex-direction: column;
+    flex:1;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
+
+  .reviews-title-container {
+    width: 100%;
+    padding: 0 24px;
+  }
+
+ 
+  .review-item {
+    background-color: #EDEBE9;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    text-align: start;
+    /* font-size: 24px; */
+    border-radius: 30px;
+    flex-direction: column;
+    padding: 24px;
+    height: 370px;
+    /* min-width: 48%; */
+    min-width: 90%;
+  }
+
+  .reviews-get-the-app-btn {
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  .scroll-view-review-container {
+    display: flex;
+    flex-direction: row;
+    /* width: 100%; */
+    padding: 0 24px;
+    margin-top: 24px;
+    
+
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    width: 100%;
+    gap: 24px; /* Optional: to add space between items */
+    margin-top: 30px;
+    scrollbar-width: none; /* For Firefox */  
+    -ms-overflow-style: none; /* For IE and Edge */
+  }
+
+  .scroll-view-review-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .review-item-title {
+    margin-top: 16px;
+    font-size: 27px;
+    line-height: 38px;
+    font-weight: 500;
+  }
+
+  .scroll-view-button {
+    display: flex;
+    position: absolute;
+  }
+
+  .reviews-container-title {
+    font-size: 32px;
+    line-height: 42px;
+    font-weight: 600;
+    color: #AD8957;
+    font-family: "Cormorant Garamond", serif;
+    position: absolute;
+    width: 50%;
+    /* margin-left: 10%; */
+    text-align: start;
+  }
+
+  .reviews-image {
+    width: 100%;
+  }
+
+  .reviews-get-the-app-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 24px 0 24px;
+  }
+
+  .reviews-get-the-app-text {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 500;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 679px) {
+  .reviews-content-container {
+    flex-direction: column;
+    flex:1;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+  }
+
+  .reviews-title-container {
+    width: 100%;
+    padding: 0 32px;
+  }
+
+ 
+  .review-item {
+    background-color: #EDEBE9;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    text-align: start;
+    /* font-size: 24px; */
+    border-radius: 30px;
+    flex-direction: column;
+    padding: 24px;
+    height: 400px;
+    min-width: 48%;
+  }
+
+
+  .scroll-view-review-container {
+    display: flex;
+    flex-direction: row;
+    /* width: 100%; */
+    padding: 0 32px;
+    margin-top: 24px;
+    
+
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    width: 100%;
+    gap: 24px; /* Optional: to add space between items */
+    margin-top: 30px;
+
+    scrollbar-width: none; /* For Firefox */  
+    -ms-overflow-style: none; /* For IE and Edge */
+  }
+
+  .scroll-view-review-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .review-item-title {
+    margin-top: 16px;
+    font-size: 27px;
+    line-height: 38px;
+    font-weight: 500;
+  }
+
+  .scroll-view-button {
+    display: flex;
+    position: absolute;
+  }
+
+  .reviews-container-title {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 600;
+    color: #AD8957;
+    font-family: "Cormorant Garamond", serif;
+    position: absolute;
+    width: 50%;
+    margin-left: 10%;
+    text-align: start;
+  }
+
+  .reviews-image {
+    width: 100%;
+  }
+
+  .reviews-get-the-app-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 32px 0 32px;
+  }
+
+  .reviews-get-the-app-text {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .reviews-container {
+    padding: 130px 150px;
+  }
+  
+  .scroll-review {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    width: 100%;
+    gap: 20px; /* Optional: to add space between items */
+    margin-top: 30px;
+  }
+  
+  .review-item {
+    background-color: #EDEBE9;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    text-align: start;
+    /* font-size: 24px; */
+    border-radius: 30px;
+    flex-direction: column;
+    padding: 24px;
+    min-height: 30%;
+  }
+  
+  
+  .review-item-title {
+    margin-top: 16px;
+    font-size: 27px;
+    line-height: 38px;
+    font-weight: 500;
+  }
+  
+  .scroll-view-button {
+    display: flex;
+    position: absolute;
+  }
+  
+  .reviews-container-title {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 600;
+    color: #AD8957;
+    font-family: "Cormorant Garamond", serif;
+    position: absolute;
+    width: 50%;
+    text-align: start;
+  }
+  
+  .reviews-image {
+    width: 100%;
+  }
+  
+  .reviews-get-the-app-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+  }
+  
+  .reviews-get-the-app-text {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+    .reviews-container {
+      padding: 10% 15%;
+    }
+}

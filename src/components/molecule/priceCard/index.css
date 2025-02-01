@@ -1,0 +1,147 @@
+.price-card-container {
+  padding: 55px 65px;
+  background-color: #fff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 50px;
+  position: relative;
+  max-height: 563px;
+  min-width: 380px;
+  max-width: 30%;
+}
+
+.buy-btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.price-card-primary-container {
+  padding: 24px 65px 50px 65px;
+  max-height: 800px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 999;
+  margin: 0 -20px;
+}
+
+.price-card-title-container {
+  margin-bottom: 60px;
+}
+
+.price-card-primary-title-container {
+  margin-bottom: 92px;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  position: relative;
+}
+
+.discounted-price-text {
+  color: #999 !important;
+  font-weight: 600 !important;
+  font-size: 35px !important;
+  margin-left: 15px;
+}
+
+.discounted-price-text > div {
+  position: absolute;
+  z-index: 999;
+  width: 50px;
+  height: 2px;
+  background-color: #999;
+  bottom: 35%;
+  transform:rotate(-20deg)
+}
+
+.price-card-primary-title-container > div >.price-card-title, 
+.price-card-primary-title-container > div > .price-card-price,
+.premium-price {
+  color: #AD8957;
+}
+
+.price-card-title {
+  font-size: 22px;
+  line-height: 38px;
+  font-weight: 600;
+}
+
+.price-card-price {
+  font-size: 50px;
+  line-height: 60px;
+  font-weight: 600;
+  font-family: "Cormorant Garamond", serif;
+  font-style: italic;
+}
+
+li::marker{
+  color: #282828 !important;
+}
+
+.price-card-info {
+  margin-bottom: 61px;
+}
+
+.price-card-primary-info {
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.price-card-primary-btn-container {
+  display: flex;
+}
+
+.price-card-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price-card-footer > p {
+  font-size: 10px;
+  margin-top: 16px;
+  max-width: 80%;
+  line-height: 14px;
+  text-align: center;
+}
+
+.best-offer-flag-container {
+  position: absolute;
+  top: -66px;
+  right: -66px;
+}
+
+@media only screen and (max-width: 700px) {
+ .price-card-container {
+    max-height: 1000px;
+    min-width: 90% !important;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .price-card-title {
+    font-size: 18px;
+  }
+
+  .price-card-container {
+    max-height: 1000px;
+    min-width: 400px;
+  }
+
+  .price-card-primary-container {
+    padding: 55px 65px;
+    margin: 40px 0;
+  }
+
+  .price-card-primary-title-container {
+    margin-bottom: 61px;
+  }
+
+  .price-card-primary-info {
+    margin-bottom: 61px;
+  }
+}

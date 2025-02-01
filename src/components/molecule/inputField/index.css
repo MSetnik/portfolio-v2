@@ -1,0 +1,45 @@
+.input-field-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.input-field-label {
+  color: #282828; 
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 3px;
+}
+
+.input-field-input {
+  background-color: #F4F4F4;
+  color: #282828; 
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  font-family: "Montserrat";
+  border: 1px solid transparent;
+}
+
+.input-field-input {
+  border: 0;
+  border-radius: 10px;
+  padding: 0 10px;
+  line-height: 44px;
+
+}
+
+.input-field-input:focus, 
+.input-field-input:active {
+  border: 1px solid #282828; /* Active/focused border */
+  outline: none; /* Remove default outline (optional) */
+}
+
+@media only screen and (min-width: 1024px) {
+  .input-field-label {
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 5px;
+  }
+}

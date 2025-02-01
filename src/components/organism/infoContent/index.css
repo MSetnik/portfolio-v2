@@ -1,0 +1,432 @@
+.info-content-main-container {
+  padding: 80px 24px;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.info-content-title {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  color: #AD8957;
+  font-size: 32px;
+  line-height: 42px;
+  text-align: start;
+}
+
+.info-content-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.info-content-text {
+  text-align: start;
+  margin-top: 36px;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.info-content-image {
+  width: 100%;
+  margin-top: 60px;
+  margin-bottom: 70px;
+}
+
+/* Next content */
+.item-container-main-container {
+  padding: 70px 0;
+}
+
+.item-container-text-title-container {
+  padding: 0 25px
+}
+
+.item-container-title {
+  font-size: 18px;
+  line-height: 25px;
+  color: #282828;
+  font-weight: 600;
+}
+
+.item-container-subtitle {
+  color: #AD8957;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+
+
+/* Next content */
+.faq-main-container {
+  padding: 70px 0;
+  background-color: #FFF;
+}
+
+.faq-text-title-container {
+  padding: 0 25px;
+}
+
+.faq-title {
+  font-size: 18px;
+  line-height: 25px;
+  color: #282828;
+  font-weight: 600;
+}
+
+.faq-subtitle {
+  color: #AD8957;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 8px;
+}
+
+.faq-item {
+  background-color: #FFF !important;
+}
+
+
+.scroll-container {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  width: 100%;
+  gap: 20px; /* Optional: to add space between items */
+  margin-top: 30px;
+}
+
+.scroll-item {
+  flex: 0 0 80%; /* Each item takes 300px width */
+  height: auto;
+  padding: 30px;
+  background-color: #FAF8F4;
+  scroll-snap-align: center;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+  /* font-size: 24px; */
+  border-radius: 40px;
+  scrollbar-width: none;
+  flex-direction: column;
+}
+
+
+.scroll-item-title {
+  margin-bottom: 10px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 600;
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}
+
+.scroll-item:first-child {
+  margin-left: 20px; /* Add the desired margin to the first item */
+}
+
+.scroll-item:last-child {
+  margin-right: 25px;
+}
+
+.why-us-image {
+  padding: 24px;
+}
+
+.faq-btn-question > p, 
+.faq-btn-question > div > svg>  .svg-arrow-path {
+  color: #282828;
+  stroke: #282828;
+}
+
+.faq-btn-question {
+  border: 1px solid black !important;
+  background-color: white;
+}
+
+.why-choose-us-container {
+  width: 80%;
+  /* text-align: center; */
+  /* justify-self: center; */
+  margin-top: 80px;
+}
+
+
+.why-us-image {
+  margin-top: 50px;
+  background-image: url('../../../assets/weddingCamera/why-us/why-us-phone.png');
+  width: 90%;
+  height: 1100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-self: center;
+  /* height: 100vw; */
+}
+
+
+@media only screen and (max-width: 676px) {
+  .why-choose-us-container {
+    text-align: center;
+  }
+
+  /* Next content */
+  .item-container-main-container {
+    padding: 70px 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .faq-data-btn {
+    display: flex !important;
+    justify-self: center;
+    margin-top: 50px;
+  }
+
+  .faq-btn-question {
+    display: none;
+  }
+
+  .scroll-faq {
+    padding: 0 24px;
+    margin-top: 50px;
+  }
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 677px) {
+  .info-content-main-container {
+    padding: 130px 32px;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .info-content-title {
+    font-size: 45px;
+    line-height: 55px;
+    text-align: start;
+    width: 80%;
+    align-self: flex-start;
+  }
+ 
+  .info-content-text {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: start;
+    width: 70%;
+    align-self: flex-start;
+  }
+
+  .info-content-image {
+    /* width: 50%; */
+  }
+
+  .why-choose-us-container {
+    width: 40%;
+    margin-top: 130px;
+  }
+
+  .faq-btn-question {
+    display: none;
+  }
+
+  .faq-data-btn {
+    display: flex;
+    justify-self: center;
+    margin-top: 70px;
+  }
+
+  .faq-container-title {
+    text-align: center;
+  }
+
+  .why-us-image {
+    margin-top: -35%;
+    background-image: url('../../../assets/weddingCamera/why-us/why-us-tablet.png');
+    width: 90%;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-self: center;
+    /* scale: 1.2; */
+    /* height: 100vw; */
+  }
+
+  .faq-main-container {
+    margin-bottom: 70px;
+  }
+
+
+}
+
+@media only screen and (max-width: 1024px) and (min-width:679px) {
+  .scroll-faq {
+    flex: 0.5;
+    padding: 0 32px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .info-content-main-container {
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 130px 150px;
+  }
+
+  .faq-container-title {
+    margin-bottom: 40px !important;
+  }
+
+  .info-content-title {
+    font-size: 50px;
+    line-height: 60px;
+    text-align: start;
+  }
+  
+  .info-content-text {
+    font-size: 16px;
+    line-height: 28px;
+    text-align: start;
+  }
+
+  .item-container-main-container {
+    padding: 125px 130px;
+  }
+
+  .info-content-text-container {
+    width: 40%;
+    margin-right: 100px;
+  }
+
+  .info-content-image {
+    width: 50%;
+  }
+
+  .faq-data-btn {
+    display: none;
+  }
+
+  .scroll-container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: visible;
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+    width: 100%;
+    gap: 20px; /* Optional: to add space between items */
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  .scroll-item {
+    flex: 0 0 47%; 
+    /* Each item takes 300px width */
+    height: auto;
+    padding: 30px;
+    background-color: #FAF8F4;
+    scroll-snap-align: center;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    text-align: start;
+    /* font-size: 24px; */
+    border-radius: 40px;
+    scrollbar-width: none;
+    flex-direction: column;
+  }
+
+  .scroll-item-title {
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+  }
+
+  .scroll-item:first-child {
+    margin-left: 0; /* Add the desired margin to the first item */
+  }
+
+  .scroll-item:last-child {
+    margin-right: 0;
+  }
+
+  .faq-main-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .faq-text-title-container {
+    padding: 0 0px;
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+  }
+
+  .scroll-faq {
+    flex: 0.5;
+  }
+
+  .faq-title {
+    font-size: 18px;
+    line-height: 25px;
+    color: #282828;
+    font-weight: 600;
+  }
+
+  .faq-subtitle {
+    color: #AD8957;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 8px;
+  }
+
+  .faq-item {
+    background-color: #FFF !important;
+  }
+
+  .why-choose-us-container {
+    width: 40%;
+  }
+
+
+  .why-us-image {
+    margin-top: -15%;
+    background-image: url('../../../assets/weddingCamera/why-us/why-us-image.png');
+    width: 100%;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    scale: 1.2;
+    margin-bottom: 130px;
+
+    /* height: 100vw; */
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  .info-content-main-container,
+  .faq-main-container,
+  .item-container-main-container
+   {
+    padding: 10% 15%;
+  }
+  
+  .why-us-image {
+    margin-top: -10%;
+  }
+}

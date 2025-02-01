@@ -1,0 +1,316 @@
+.contact-us-container {
+  padding: 70px 25px;
+  background-color: #FFF;
+  display: flex;
+}
+
+.contact-us-text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us-title {
+  margin-bottom: 10px;
+  color: #AD8957;
+  font-family: "Cormorant Garamond", serif;
+}
+
+
+.contact-form-container {
+  margin-top: 30px;
+}
+
+.send-message-btn {
+  width: 100%;
+
+}
+
+
+.footer-image-container {
+  margin-top: 70px;
+  padding-bottom: 0px;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: start;
+  background-color: #FAF8F4;
+}
+
+.footer-image {
+  width: 80%;
+}
+  
+#form-content {
+  display: flex;    
+  flex-direction: column;
+  flex:1;
+}
+
+.contact-email-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contact-follow-us-container {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width:678px) {
+.contact-us-container {
+    flex-direction: column;
+    padding: 130px 24px;
+    gap: 24px;
+  }
+
+
+  .contact-us-title-container {
+    display: flex;
+    flex: 0.5;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .contact-us-text {
+    width: 100%;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .contact-form-container {
+    display: flex;
+    flex:0.5;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 80px;
+  }
+
+  #form-content {
+    width: 40%;
+  }
+
+  .send-message-btn {
+    margin-top: 24px;
+    width: 100%;
+    align-self: center;
+  }
+  
+  .footer-image-container {
+    margin-top: -70px;
+    padding-bottom: 70px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: end;
+    background-color: #FAF8F4;
+  }
+
+  .footer-image {
+    width: 80%;
+    object-fit: contain;
+  }
+
+  .contact-us-title {
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 30px;
+  }
+
+  .contact-email-container > a {
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 500;
+    margin-left: 16px;
+  }
+  
+  .contact-email-container {
+    margin-top: 40px;
+  }
+
+  .contact-follow-us-container {
+    gap: 16px;
+    margin-top: 40px;
+  }
+ 
+  .contact-follow-us-links-contanier {
+    gap: 16px;
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width:679px) {
+  .contact-us-container {
+    flex-direction: row;
+    padding: 130px 32px;
+    gap: 24px;
+  }
+
+
+  .contact-us-title-container {
+    display: flex;
+    flex: 0.5;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .contact-form-container {
+    display: flex;
+    flex:0.5;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 80px;
+  }
+
+  #form-content {
+    width: 40%;
+  }
+
+  .send-message-btn {
+    margin-top: 24px;
+    width: 80%;
+  }
+  
+  .footer-image-container {
+    margin-top: -70px;
+    padding-bottom: 70px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: end;
+    background-color: #FAF8F4;
+  }
+
+  .footer-image {
+    width: 80%;
+    object-fit: contain;
+  }
+
+  .contact-us-title {
+    font-size: 45px;
+    line-height: 50px;
+    margin-bottom: 25px;
+  }
+  
+  .contact-us-title {
+    font-size: 45px;
+    line-height: 50px;
+    margin-bottom: 25px;
+  }
+
+  .contact-email-container > a {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    margin-left: 10px;
+  }
+  
+  .contact-email-container {
+    margin-top: 40px;
+  }
+
+  .contact-follow-us-container {
+    gap: 16px;
+    margin-top: 40px;
+  }
+ 
+  .contact-follow-us-links-contanier {
+    gap: 16px;
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .contact-us-container {
+    flex-direction: row;
+    padding: 130px 120px;
+    gap: 24px;
+  }
+
+
+  .contact-us-title-container {
+    display: flex;
+    flex: 0.5;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  .contact-form-container {
+    display: flex;
+    flex:0.5;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 80px;
+  }
+
+  #form-content {
+    width: 40%;
+  }
+
+  .send-message-btn {
+    margin-top: 24px;
+    width: 50%;
+  }
+  
+  .footer-image-container {
+    margin-top: -70px;
+    padding-bottom: 70px;
+    padding-left: 25px;
+    padding-right: 25px;
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: end;
+    background-color: #FAF8F4;
+  }
+
+  .footer-image {
+    width: 80%;
+    object-fit: contain;
+  }
+
+  .contact-us-title {
+    font-size: 50px;
+    line-height: 60px;
+    margin-bottom: 30px;
+  }
+
+  .contact-email-container > a {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    margin-left: 10px;
+  }
+  
+  .contact-email-container {
+    margin-top: 40px;
+  }
+
+  .contact-follow-us-container {
+    gap: 16px;
+    margin-top: 40px;
+  }
+ 
+  .contact-follow-us-links-contanier {
+    gap: 16px;
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 1441px) {
+  .contact-us-container {
+    padding: 10% 15%;
+  }
+}
