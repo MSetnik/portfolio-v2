@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
+  white-space: nowrap;
+  padding: 0 0 100px 0;
+}
+
+.slider {
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: slide-animation 70s linear infinite;
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1024px) {
+  .container {
+    padding: 112px 0;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .container {
+    padding: 112px 0;
+  }
+}
+
+@keyframes slide-animation {
+  /* from {
+    transform: translateX(0);
+  } */
+  to {
+    transform: translate(-50%);
+  }
+  
+}

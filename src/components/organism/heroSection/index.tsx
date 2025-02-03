@@ -13,7 +13,7 @@ const HeroSection: React.FC = () => {
 			<div className={styles["hero-content-container"]}>
 				<p className={styles.infoText}>Welcome to my world!</p>
 				<h1 className={styles["hero-main-title"]}>
-					Hi, I'm Matko <br />
+					{`Hi, I'm Matko`} <br />
 					<span className={sharedStyles.textColorSecondary}>
 						Frontend Mobile Developer
 					</span>{" "}

@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}

@@ -1,0 +1,32 @@
+.container {
+  margin-top: 48px;
+}
+
+.menuContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; 
+}
+
+
+.menuItem {
+  font-size: 18px;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.menuItemActive {
+  color: #5841DC !important;
+}
+
+.menuContentContainer {
+  margin-top: 32px;
+}
+
+.menuContentItem {
+  margin-bottom: 8px;
+}
+
+.experienceItem {
+  margin-bottom: 24px;
+}

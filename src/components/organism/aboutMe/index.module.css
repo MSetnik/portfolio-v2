@@ -1,0 +1,34 @@
+.container {
+  padding: 0 24px 100px 24px;
+}
+
+.aboutMeText {
+  margin-top: 50px;
+  flex:1;
+}
+
+.aboutMeContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    padding: 112px 8%;
+  }
+  
+  .aboutMeContainer {
+    flex-direction: row;
+    gap: 5%;
+  }
+
+  .aboutMeText {
+    flex: 0.5;
+  }
+
+  .aboutMeMenuContainer {
+    flex: 0.5;
+    flex-direction: column;
+  }
+}

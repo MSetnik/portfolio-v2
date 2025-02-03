@@ -1,14 +1,18 @@
-import React from 'react';
-import styles from './Home.module.css';
-import HeroSection from '../../components/organism/heroSection';
+import React from "react"
+import HeroSection from "../../components/organism/heroSection"
+import HowCanIHelp from "../../components/organism/howCanIHelp"
+import MyTechnologies from "../../components/organism/myTechnologies"
+import AboutMe from "../../components/organism/aboutMe"
 
-interface Props {
-}
-
-const Home : React.FC<Props> = () => { 
-  return (
-    <HeroSection />
-  )
+const Home: React.FC = () => {
+	return (
+		<>
+			<HeroSection />
+			<HowCanIHelp />
+			<MyTechnologies />
+			<AboutMe />
+		</>
+	)
 }
 
 export default Home

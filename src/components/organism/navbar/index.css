@@ -28,22 +28,22 @@
   transition: all 1s ease;
   /* background-color: red; */
 
-  background: rgba(135, 152, 163, 0.6); /* Semi-transparent background */
+  background: rgba(57, 57, 57, 0.6);; /* Semi-transparent background */
   /* border-radius: 16px; */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
   backdrop-filter: blur(10px); /* Frosted glass effect */
   -webkit-backdrop-filter: blur(10px); /* For Safari support */
-  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+  border: 1px solid rgba(57, 57, 57, 0.6); /* Subtle border */
   /* padding: 20px; */
 }
 
 .nav-transparent {
-  background: rgba(135, 152, 163, 0.6); /* Semi-transparent background */
+  background: rgba(57, 57, 57, 0.6);; /* Semi-transparent background */
   /* border-radius: 16px; */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
   backdrop-filter: blur(10px); /* Frosted glass effect */
   -webkit-backdrop-filter: blur(10px); /* For Safari support */
-  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+  border: 1px solid rgba(57, 57, 57, 0.6); /* Subtle border */
 }
 
 .visible {
@@ -91,14 +91,13 @@
 
 .sticky {
   transition: all 1s ease;
-  /* background-color: red; */
-
-  background: rgba(135, 152, 163, 0.6); /* Semi-transparent background */
+  top: -5px !important;
+  background: rgba(57, 57, 57, 0.6); /* Semi-transparent background */
   /* border-radius: 16px; */
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
   backdrop-filter: blur(10px); /* Frosted glass effect */
   -webkit-backdrop-filter: blur(10px); /* For Safari support */
-  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+  border: 1px solid rgba(57, 57, 57, 0.6); /* Subtle border */
   /* padding: 20px; */
 }
 
@@ -252,12 +251,20 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .navbar-div {
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 56px;
+  }
+
   .navbar-container-small {
     padding: 5px 20px;
+    background-color: blue;
   }
 
   .navbar-open-btn {
-    padding-top: 6px
+    top: 10px;
   }
 }
 
@@ -276,14 +283,12 @@
 
   .sticky {
     transition: all 1s ease;
-    /* background-color: red; */
-
-    background: rgba(135, 152, 163, 0.6); /* Semi-transparent background */
+    background: rgba(57, 57, 57, 0.6);; /* Semi-transparent background */
     /* border-radius: 16px; */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
     backdrop-filter: blur(10px); /* Frosted glass effect */
     -webkit-backdrop-filter: blur(10px); /* For Safari support */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+    border: 1px solid rgba(57, 57, 57, 0.6); /* Subtle border */
     /* padding: 20px; */
   }
 
@@ -332,8 +337,6 @@
     transition: all .5s ease-in-out;
   }
   
- 
-  
   .navbar-container-small {
     display: flex;
     flex: 1;
@@ -355,6 +358,18 @@
     align-items: center;
     justify-content: space-between;
   }
+
+   .navbar-div {
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 56px;
+  }
+
+
+  .navbar-open-btn {
+    top: 14px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -375,12 +390,12 @@
     transition: all 1s ease;
     /* background-color: red; */
 
-    background: rgba(135, 152, 163, 0.6); /* Semi-transparent background */
+    background: rgba(57, 57, 57, 0.6);; /* Semi-transparent background */
     /* border-radius: 16px; */
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
     backdrop-filter: blur(10px); /* Frosted glass effect */
     -webkit-backdrop-filter: blur(10px); /* For Safari support */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+    border: 1px solid rgba(57, 57, 57, 0.6); /* Subtle border */
     /* padding: 20px; */
   }
   
@@ -411,6 +426,7 @@
     padding: 8px 100px 0px 50px;
   }
 }
+
 @media only screen and (min-width: 1400px) {
   .navbar-div {
     display: flex;
@@ -423,7 +439,7 @@
     display: flex;
     flex-direction: row;
     flex:1;
-    padding: 20px 100px 20px 100px;
+    /* padding: 20px 100px 20px 100px; */
     /* max-width: 2000px; */
     align-items: center;
     justify-content: space-between;
