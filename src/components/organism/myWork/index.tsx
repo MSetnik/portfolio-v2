@@ -3,12 +3,52 @@ import React, { useState } from "react"
 import styles from "./index.module.css"
 import MyWorkMenu from "../myWorkMenu"
 import ProjectCard from "../../molecule/projectCard"
+import { mobileProjects, webProjects } from "../../../constants"
+import { useNavigate } from "react-router"
 
-import rvh from "../../../assets/projects/Mobile/rvh.png"
 const MyWork: React.FC = () => {
+	const navigate = useNavigate()
+
 	const [activeIndex, setActiveIndex] = useState<0 | 1 | 2>(0)
 
-	console.log(activeIndex)
+	const renderMobileProjects = () => {
+		return mobileProjects.map((project) => {
+			return (
+				<ProjectCard
+					onClick={() => navigate(`/project/mobile/${project.id}`)}
+					key={project.id}
+					image={project.image.default}
+					title={project.title}
+				/>
+			)
+		})
+	}
+
+	const renderWebProjects = () => {
+		return webProjects.map((project) => {
+			return (
+				<ProjectCard
+					onClick={() => navigate(`/project/web/${project.id}`)}
+					key={project.id}
+					image={project.image.default}
+					title={project.title}
+				/>
+			)
+		})
+	}
+
+	const renderMenuContent = () => {
+		switch (activeIndex) {
+			case 0:
+				return renderMobileProjects()
+			case 1:
+				return renderWebProjects()
+			case 2:
+				return "Backend"
+			default:
+				return null
+		}
+	}
 
 	return (
 		<section className={styles.container}>
@@ -19,8 +59,8 @@ const MyWork: React.FC = () => {
 				setActiveIndex={setActiveIndex}
 			/>
 
-			<div>
-				<ProjectCard image={rvh} title="Raspored vlakova hrvatske" />
+			<div className={styles.projectsContainer}>
+				{renderMenuContent()}
 			</div>
 		</section>
 	)

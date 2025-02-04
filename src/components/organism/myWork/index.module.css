@@ -8,3 +8,21 @@
 .title {
   text-align: center;
 }
+
+.projectsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+}
+
+@media only screen and (min-width: 1025px) {
+  .projectsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(45%, 45%)); /* Adjust column size */
+    gap: 32px; /* Space between grid items */
+    justify-content: center; /* Center content if fewer items */
+    padding: 20px 0;
+    row-gap: 40px;
+  }
+}

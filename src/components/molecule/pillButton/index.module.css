@@ -9,6 +9,10 @@
   border-radius: 80px;
 }
 
+.container:hover {
+  cursor: pointer;
+}
+
 .menuText {
   font-size: 18px;
 }

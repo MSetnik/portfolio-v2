@@ -30,7 +30,7 @@ const HeroSection: React.FC = () => {
 						icon={<ArrowRight />}
 					/>
 
-					<CustomButton
+					{/* <CustomButton
 						style="secondary"
 						title="Download CV"
 						onPress={() => {
@@ -41,7 +41,7 @@ const HeroSection: React.FC = () => {
 								<ArrowRight />
 							</div>
 						}
-					/>
+					/> */}
 				</div>
 
 				<p className={styles.heroAboutMe}>

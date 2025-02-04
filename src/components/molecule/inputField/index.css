@@ -5,7 +5,7 @@
 }
 
 .input-field-label {
-  color: #282828; 
+  color: #A8ACAD; 
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
@@ -13,28 +13,29 @@
 }
 
 .input-field-input {
-  background-color: #F4F4F4;
-  color: #282828; 
+  background-color: #101010;
+  color: #A8ACAD; 
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
-  font-family: "Montserrat";
   border: 1px solid transparent;
 }
 
 .input-field-input {
   border: 0;
-  border-radius: 10px;
-  padding: 0 10px;
+  border-radius: 16px;
+  padding: 0 16px;
   line-height: 44px;
+  border: 1px solid #222222;
 
 }
 
 .input-field-input:focus, 
 .input-field-input:active {
-  border: 1px solid #282828; /* Active/focused border */
+  border: 1px solid #FFFFFF; /* Active/focused border */
   outline: none; /* Remove default outline (optional) */
 }
+
 
 @media only screen and (min-width: 1024px) {
   .input-field-label {
