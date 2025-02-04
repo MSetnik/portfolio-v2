@@ -45,6 +45,14 @@ const AboutMeMenu: React.FC<Props> = ({ className }) => {
 							<b>Performance Optimization</b> - Enhancing app
 							performance
 						</p>
+						<p className={styles.menuContentItem}>
+							<b>Frontend Development</b> - Created multiple
+							websites and web applications using React
+						</p>
+						<p className={styles.menuContentItem}>
+							<b>Backend Development</b> - Worked with backend
+							using NodeJS and Firebase functions
+						</p>
 					</div>
 				)
 			case 1:

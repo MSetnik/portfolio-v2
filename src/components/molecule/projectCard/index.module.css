@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.projectFooterContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.seeMoreBtn {
+  width: unset !important;
+  padding: 8px 16px;
+}
+
+.seeMoreBtn:hover {
+  background-color: #FFF;
+}
+
+.seeMoreBtnText {
+  font-size: 14px;
+
+}
+
+.image {
+  width: 100%;
+  
+}
