@@ -62,7 +62,9 @@ const AboutMeMenu: React.FC<Props> = ({ className }) => {
 							<p className={styles.menuContentItem}>
 								<b>
 									React Native Software Engineer <br />
+									</b>
 									at{" "}
+									
 									<a
 										href="https://mstart.hr"
 										target="_blank"
@@ -70,8 +72,8 @@ const AboutMeMenu: React.FC<Props> = ({ className }) => {
 									>
 										mStart plus d.o.o.
 									</a>
-									<br /> [01.2021. – Present]
-								</b>
+									<br /> 
+									<strong>01.2021. – Present</strong>
 							</p>
 							<p className={styles.menuContentItem}>
 								- Developed cross-platform mobile applications
@@ -106,6 +108,7 @@ const AboutMeMenu: React.FC<Props> = ({ className }) => {
 							<p className={styles.menuContentItem}>
 								<b>
 									Business Owner <br />
+									</b>
 									at{" "}
 									<a
 										href="https://mcode.hr"
@@ -114,35 +117,20 @@ const AboutMeMenu: React.FC<Props> = ({ className }) => {
 									>
 										MCODE.hr
 									</a>
-									<br /> [04.2024. – Present]
-								</b>
+									<br /> 
+									<strong>04.2024. – Present</strong>
 							</p>
 							<p className={styles.menuContentItem}>
-								- Developed cross-platform mobile applications
-								for iOS and Android using React Native
+								- Owner and developer
 							</p>
 							<p className={styles.menuContentItem}>
-								- Optimized app performance (reducing bundle
-								size, improving FPS, minimizing memory leaks)
+								{`- Responsible for multiple application lifespan (idea -> creation -> release)`}
 							</p>
 							<p className={styles.menuContentItem}>
-								- Implemented custom native code to expose
-								native functionalities
+								- Giving constructive impovements for app design
 							</p>
 							<p className={styles.menuContentItem}>
-								- Ensured pixel-perfect UI by collaborating
-								closely with designers and using Figma
-							</p>
-							<p className={styles.menuContentItem}>
-								- Worked with offline-first architecture
-							</p>
-							<p className={styles.menuContentItem}>
-								- Collaborated with backend teams to ensure
-								smooth API integration
-							</p>
-							<p className={styles.menuContentItem}>
-								- Published 10+ apps to the App Store & Google
-								Play, handling the entire deployment process
+								- 5+ satisfied clients
 							</p>
 						</div>
 					</div>

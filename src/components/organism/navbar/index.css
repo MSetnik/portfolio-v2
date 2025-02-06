@@ -260,7 +260,6 @@
 
   .navbar-container-small {
     padding: 5px 20px;
-    background-color: blue;
   }
 
   .navbar-open-btn {
@@ -424,6 +423,9 @@
 @media only screen and (min-width: 1024px) {
   .navbar-container {
     padding: 8px 100px 0px 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: end !important;
   }
 }
 

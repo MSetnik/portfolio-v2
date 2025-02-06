@@ -1,12 +1,12 @@
-/* eslint-disable @typescript-eslint/no-require-imports */
-import React, { useState } from "react"
+ 
+import React, { HTMLProps, useState } from "react"
 import styles from "./index.module.css"
 import MyWorkMenu from "../myWorkMenu"
 import ProjectCard from "../../molecule/projectCard"
 import { mobileProjects, webProjects } from "../../../constants"
 import { useNavigate } from "react-router"
 
-const MyWork: React.FC = () => {
+const MyWork: React.FC<HTMLProps<HTMLDivElement>> = (props) => {
 	const navigate = useNavigate()
 
 	const [activeIndex, setActiveIndex] = useState<0 | 1 | 2>(0)
@@ -51,7 +51,10 @@ const MyWork: React.FC = () => {
 	}
 
 	return (
-		<section className={styles.container}>
+		<section
+			{...props}
+			className={`${styles.container} ${props.className}`}
+		>
 			<h1 className={styles.title}>My work</h1>
 
 			<MyWorkMenu

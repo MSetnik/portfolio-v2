@@ -1,13 +1,13 @@
-import React from "react"
+import React, { HTMLProps } from "react"
 import styles from "./index.module.css"
 import MyExperties from "../../molecule/myExperties"
 import MobilePhoneSvg from "../../atom/mobilePhoneSvg"
 import LaptopSvg from "../../atom/laptopSvg"
 import ShakingHandsSvg from "../../atom/shakingHandsSvg"
 
-const HowCanIHelp: React.FC = () => {
+const HowCanIHelp: React.FC<HTMLProps<HTMLDivElement>> = (props) => {
 	return (
-		<section className={styles.container}>
+		<section {...props} className={`${styles.container} ${props.className}`}>
 			<h1>{`Here's how I can help you.`}</h1>
 
 			<div className={styles.contentContainer}>

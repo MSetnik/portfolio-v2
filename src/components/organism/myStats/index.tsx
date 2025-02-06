@@ -8,7 +8,7 @@ const MyStats: React.FC = () => {
 			<StatCard statNumber="4+" statText="Years of experience" />
 			<StatCard statNumber="10+" statText="Completed Projects" />
 			<StatCard statNumber="10+" statText="Satisfied Clients" />
-			<StatCard statNumber="4+" statText="Years of experience" />
+			<StatCard statNumber="1M+" statText="Lines of code" />
 		</section>
 	)
 }

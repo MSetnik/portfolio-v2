@@ -1,7 +1,5 @@
 /* Storing user's device details in a variable */
 
-import { IUser } from '../interface'
-
 export const checkIsMobile = (userAgent: string) => {
 	// let details = navigator.userAgent;
 	const regexp = /android|iphone|kindle|ipad|iPhone/i
@@ -18,10 +16,6 @@ export const checkIsMobile = (userAgent: string) => {
 export const scrollToSection = (id: string) => {
 	const section = document.getElementById(id)
 	if (section) {
-		section.scrollIntoView({ behavior: 'smooth' }) // Smooth scrolling
+		section.scrollIntoView({ behavior: "smooth" }) // Smooth scrolling
 	}
-}
-
-export const getPartnerName = (lPartners: IUser[], userId: string) => {
-	return lPartners.filter((partner) => partner.id === userId).map((partner) => partner.name)
 }

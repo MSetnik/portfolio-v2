@@ -1,14 +1,35 @@
 .container {
-  padding: 112px 24px;
+  padding: 112px 24px 0 24px;
 }
 
 .title {
   text-align: center;
 }
 
-img {
+.contentContainer > img {
   width: 100%;
   margin-top: 50px;
   margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 1025px) {
+  .contentContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 90px;
+  }
+
+  .contentContainer > img {
+    flex: 0.4;
+    width: 40%;
+  }
+
+  .contentContainer > p {
+    flex: 0.4;
+    margin-top: 100px ;
+  }
 }
 

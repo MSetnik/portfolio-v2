@@ -1,0 +1,19 @@
+.linksContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  align-items: center;
+  gap: 24px;
+}
+
+.svgPath:hover path {
+  fill: #FFF;
+  transition: all .1s ease-in-out;
+}
+
+.footerContentContainer {
+  display: flex;
+  flex-direction: row !important;
+  width: 100% !important;
+  justify-content: space-between !important;
+}

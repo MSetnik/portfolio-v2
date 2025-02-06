@@ -20,11 +20,11 @@ const MyWorkMenu: React.FC<Props> = ({ activeIndex, setActiveIndex }) => {
 				isActive={activeIndex === 1}
 				text="Web"
 			/>
-			<PillButton
+			{/* <PillButton
 				onClick={() => setActiveIndex(2)}
 				isActive={activeIndex === 2}
 				text="Backend"
-			/>
+			/> */}
 		</menu>
 	)
 }

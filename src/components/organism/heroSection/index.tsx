@@ -1,15 +1,13 @@
-import React from "react"
+import React, { HTMLProps } from "react"
 import styles from "./Hero.module.css"
 import sharedStyles from "../../../styles/SharedStyles.module.css"
 import CustomButton from "../../atom/btn-primary/index.tsx"
-import { useNavigate } from "react-router-dom"
 import ArrowRight from "../../atom/arrowRightSvg/index.tsx"
+import { scrollToSection } from "../../../helpers/index.tsx"
 
-const HeroSection: React.FC = () => {
-	const navigate = useNavigate()
-
+const HeroSection: React.FC<HTMLProps<HTMLDivElement>> = (props) => {
 	return (
-		<section className={styles["hero-main-container"]}>
+		<section {...props} className={`${styles["hero-main-container"]} ${props.className}`}>
 			<div className={styles["hero-content-container"]}>
 				<p className={styles.infoText}>Welcome to my world!</p>
 				<h1 className={styles["hero-main-title"]}>
@@ -24,8 +22,9 @@ const HeroSection: React.FC = () => {
 				<div className={styles.heroBtnsContainer}>
 					<CustomButton
 						title="Contact me"
+						className={styles.contactMeButton}
 						onPress={() => {
-							navigate("/price")
+							scrollToSection("contact")
 						}}
 						icon={<ArrowRight />}
 					/>

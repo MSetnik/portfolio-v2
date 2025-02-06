@@ -22,18 +22,17 @@
 
 .seeMoreBtnText {
   font-size: 14px;
-
 }
 
 .image {
   width: 100%;
-  
 }
 
 @media only screen and (min-width: 1025px) {
   .container {
     display: flex;
     flex: 1;
+
     /* flex-wrap: wrap; */
   }
 }

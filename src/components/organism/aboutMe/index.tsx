@@ -1,10 +1,10 @@
-import React from "react"
+import React, { HTMLProps } from "react"
 import styles from "./index.module.css"
 import AboutMeMenu from "../aboutMeMenu"
 
-const AboutMe: React.FC = () => {
+const AboutMe: React.FC<HTMLProps<HTMLDivElement>> = (props) => {
 	return (
-		<section className={styles.container}>
+		<section {...props} className={`${styles.container} ${props.className}`}>
 			<h1>About me</h1>
 			<div className={styles.aboutMeContainer}>
 				<p className={styles.aboutMeText}>

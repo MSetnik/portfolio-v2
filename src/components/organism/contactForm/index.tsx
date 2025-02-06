@@ -1,21 +1,20 @@
-import React, { useState } from "react"
+import React, { HTMLProps, useState } from "react"
 import "./index.css"
 import InputField from "../../molecule/inputField/index.tsx"
 import emailjs from "emailjs-com"
-import BtnPrimary from "../../atom/btn-primary/index.tsx"
 import styles from "./index.module.css"
 import ArrowRight from "../../atom/arrowRightSvg/index.tsx"
+import CustomButton from "../../atom/btn-primary/index.tsx"
 
-interface Props {
-	lang?: "en" | "hr"
+interface Props extends HTMLProps<HTMLDivElement>{
 	title?: string
 	subtitle?: string
 }
 
 const ContactForm: React.FC<Props> = ({
-	lang = "hr",
-	title = "Javite nam se!",
-	subtitle = "Ako želite koristit našu aplikaciju, ili saznati više slobodno nas kontaktirajte. Ispunite kontakt formu sa strane ili nam se javite na email, a mi ćemo vam odgovoriti što je brže moguće."
+	title = "Contact me",
+	subtitle = "Got a project in mind, need a developer for your team, or just want to say hi? I’m always up for a chat about creating sleek, user-friendly web and mobile experiences. Drop me a message—I’d love to hear from you!",
+	...props
 }) => {
 	const [form, setForm] = React.useState({
 		name: "",
@@ -37,13 +36,13 @@ const ContactForm: React.FC<Props> = ({
 
 		emailjs
 			.sendForm(
-				"service_dyohpos",
-				"template_7b2nhhk",
+				"service_p4ty08n",
+				"template_jesklnf",
 				e.target,
-				"MyQGY88hp7_8-vwvc"
+				"40iimWgKMmbAK8dT3"
 			)
 			.then(
-				(result) => {
+				() => {
 					alert(
 						"The message have been received. I will get back to you shortly!"
 					)
@@ -63,7 +62,7 @@ const ContactForm: React.FC<Props> = ({
 	return (
 		<section
 			id="contact"
-			className={`contact-us-container ${styles.contactUsContainer}`}
+			className={`contact-us-container ${styles.contactUsContainer} ${props.className}`}
 		>
 			<div className="contact-us-title-container">
 				<h1 className={styles.title}>{title}</h1>
@@ -100,7 +99,7 @@ const ContactForm: React.FC<Props> = ({
 
 					{!loading && (
 						<div className={styles.sendBtnContainer}>
-							<BtnPrimary
+							<CustomButton
 								className="send-message-btn"
 								title="Send"
 								type="submit"

@@ -1,5 +1,5 @@
-import React from "react"
-import "./index.css"
+import * as React from "react";
+import "./index.css";
 
 interface Props {
 	title: string
@@ -22,7 +22,7 @@ const CustomButton: React.FC<Props> = ({
 	onPress = () => {}
 }) => {
 	return (
-		<>
+		<div>
 			<button
 				disabled={disabled}
 				className={`${
@@ -37,7 +37,7 @@ const CustomButton: React.FC<Props> = ({
 				<p>{title}</p>
 				<div>{icon}</div>
 			</button>
-		</>
+		</div>
 	)
 }
 

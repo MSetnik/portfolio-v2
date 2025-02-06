@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react"
 import styles from "./index.module.css"
 import { useLocation, useParams } from "react-router"
-import path from "path"
 import { IProjects } from "../../interfaces"
 import { mobileProjects, webProjects } from "../../constants"
+import ContactForm from "../../components/organism/contactForm"
+import Footer from "../../components/organism/footer"
 
 const Project: React.FC = () => {
 	const { id } = useParams()
@@ -42,11 +43,22 @@ const Project: React.FC = () => {
 	}
 
 	return (
-		<div className={styles.container}>
-			<h1 className={styles.title}>{projectData!.title}</h1>
-			<img src={projectData.image.default} />
+		<div>
+			<div className={styles.container}>
+				<h1 className={styles.title}>{projectData!.title}</h1>
+				<div className={styles.contentContainer}>
+					<img src={projectData.image.default} />
 
-			<p className={styles.text}>{projectData.details}</p>
+					<p
+						className={styles.text}
+						dangerouslySetInnerHTML={{
+							__html: projectData.details || ""
+						}}
+					/>
+				</div>
+			</div>
+			<ContactForm />
+			<Footer />
 		</div>
 	)
 }

@@ -1,4 +1,4 @@
-import React from "react"
+import React, { HTMLProps } from "react"
 import TechnologyCard from "../../molecule/technologyCard"
 import ReactNativeSvg from "../../atom/reactNativeSvg"
 import styles from "./index.module.css"
@@ -15,9 +15,9 @@ import NodeSvg from "../../atom/nodeSvg"
 import GitSvg from "../../atom/gitSvg"
 import SlackSvg from "../../atom/slackSvg"
 
-const MyTechnologies: React.FC = () => {
+const MyTechnologies: React.FC<HTMLProps<HTMLDivElement>> = (props) => {
 	return (
-		<div className={styles.container}>
+		<div {...props} className={`${styles.container} ${props.className}`}>
 			<div className={styles.slider}>
 				<TechnologyCard icon={<ReactNativeSvg />} text="React Native" />
 				<TechnologyCard icon={<AndroidSvg />} text="Android" />

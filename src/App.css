@@ -1,0 +1,15 @@
+
+.max-width-container {
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden !important;
+
+}

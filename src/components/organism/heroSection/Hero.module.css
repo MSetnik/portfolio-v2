@@ -1,14 +1,15 @@
 .hero-main-container {
   overflow: hidden;
   height: 100vh;
+  width: 100%;
   background-color:#101010;
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding-top: 0px;
-  padding-left: 33px;
-  padding-right: 33px;
+  /* padding-left: 33px;
+  padding-right: 33px; */
   /* padding-bottom: 30px; */
   text-align: center;
   align-items: center;
@@ -32,6 +33,9 @@
   text-align: right;
 }
 
+.contactMeButton {
+  visibility: hidden;
+}
 
 @media only screen and (min-width: 300px) and (max-width: 678px) {
   .hero-main-container {
@@ -55,6 +59,8 @@
 
   .hero-content-container {
     margin-top: 15%;
+    padding: 0 24px;
+
   }
 
    .heroBtnsContainer {
@@ -68,6 +74,8 @@
   .heroAboutMe {
     text-align: right;
   }
+
+
 }
 
 @media only screen and (min-width: 670px) and (max-width: 1024px) {
@@ -83,6 +91,7 @@
   .hero-content-container {
     width: 80%;
     margin-top: -15%;
+    padding: 0 24px;
 
   }
 
@@ -111,6 +120,9 @@
     text-align: right;
   }
  
+  .contactMeButton {
+    visibility: visible;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -125,12 +137,15 @@
     width: 80%;
   }
 
+  .contactMeButton {
+    visibility: visible;
+  }
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {
   .hero-main-container {
-    background-image: url('../../../assets/weddingCamera/hero-image-laptop.png');
     background-size: cover;
+    padding: 0 8%;
   }
 
   .hero-content-container {
@@ -147,12 +162,15 @@
     gap: 24px;
     margin-top: 24px;
   }
-
+  
+  .contactMeButton {
+    visibility: visible;
+  }
 
   .heroAboutMe {
     position: absolute;
     bottom: 10%;
-    right: 8%;
+    right: 10%;
     width: 40%;
   }
   
@@ -161,11 +179,12 @@
 
 @media only screen and (min-width: 1441px) {
   .hero-main-container {
-    background-image: url('../../../assets/weddingCamera/hero-image-laptop.png');
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 0 10%;
+    width: 100% !important;
+    align-items:flex-start !important;
   }
+
 
   .infoText {
     margin-bottom: 24px;
@@ -180,9 +199,13 @@
 
   .heroAboutMe {
     position: absolute;
-    bottom: 0;
+    bottom: 8%;
     right: 8%;
     width: 40%;
     text-align: right;
+  }
+
+  .contactMeButton {
+    visibility: visible;
   }
 }
