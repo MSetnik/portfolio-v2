@@ -9,7 +9,7 @@ const AboutMe: React.FC<HTMLProps<HTMLDivElement>> = (props) => {
 			<div className={styles.aboutMeContainer}>
 				<p className={styles.aboutMeText}>
 					My name is Matko Setnik, and I come from Valpovo. I hold a
-					{`bachelor's`} degree in Computer Science, specializing in
+					{` bachelor's`} degree in Computer Science, specializing in
 					Software Engineering, from Virovitica.
 					<br />
 					<br />I work as a Specialist in the Application Solutions

@@ -8,13 +8,14 @@ const Footer: React.FC<HTMLProps<HTMLDivElement>> = (props) => {
 			<div className={` ${props.className} ${styles.footerContentContainer}`}>
 
 				<div>
-					<p>2025 © Matko Setnik</p>
-					<p>
+					<p className={"footerText"}>2025 © Matko Setnik</p>
+					<p className={'footerText'}>
 						Designed by{" "}
 						<a
 							href="https://antonijaluketic.com"
 							target="_blank"
 							rel="noreferrer"
+							className={'footerText'}
 						>
 							Antonija Luketić
 						</a>

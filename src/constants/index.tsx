@@ -40,7 +40,7 @@ export const mobileProjects: IProjects[] = [
 		title: "Konzum eGift",
 		image: konzumeGift,
 		details: `<b>Konzum eGift</b> is a mobile application developed for <a href="https://www.konzum.hr/" target="_blank" rel='no-refereer'>Konzum</a>, the biggest retail chain in Croatia for a digitalization of their <a href="https://www.konzum.hr/poklon-kartica" target="_blank" rel='no-refereer'>giftcard service</a>. <br/> <br />
-		The serivce allows other business to create <b>electronic gift cards</b> for their employees as their Christmas, Easter and other bonuses. By using Konzum eGift application, Konzum have <b>reduced their global waist production</b> from creating plastic waste and contributed
+		The serivce allows other business to create <b>electronic gift cards</b> for their employees as their Christmas, Easter and other bonuses. By using Konzum eGift application, Konzum have <b>reduced their global waste production</b> from creating plastic cards and contributed
 		to the reduction of their carbon footprint. <br /><br />
 
 		Available on: <strong><a href='https://play.google.com/store/apps/details?id=com.mstart.konzum_egift&hl=hr' target="_blank" rel="noopener">Android</a></strong> and <strong><a href='https://apps.apple.com/hr/app/konzum-egift/id1602124590?l=hr' target="_blank" rel="noopener">iOS</a></strong>.`
