@@ -12,8 +12,6 @@ const Project: React.FC = () => {
 
 	const [projectData, setProjectData] = useState<IProjects>()
 
-	console.log(pathname.includes("mobile"))
-
 	useEffect(() => {
 		getProjectData()
 	}, [])
