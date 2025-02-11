@@ -70,7 +70,7 @@ export const mobileProjects: IProjects[] = [
 	},
 	{
 		id: "mproces",
-		title: "mProcess",
+		title: "mProces",
 		image: mProces,
 		details: `<b>mProces</b> is Document Managment Solution for managing business processes within the organization by switching to a digital form of document flow. Using mProces reduces costs while increasing the efficiency and speed of performing business processes within the organization. <br/><br />
 
