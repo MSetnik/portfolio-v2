@@ -100,7 +100,7 @@ export const webProjects: IProjects[] = [
 		id: "wedding-camera-web",
 		title: "Wedding Camera - website",
 		image: weddingCameraWeb,
-		details: `<b>Wedding Camera</b> is a website my personal Saas product. <br/>
+		details: `<b>Wedding Camera</b> is a website for a personal Saas product. <br/>
 		It has minimalist look with a modern twist. There are <b>informations about Wedding Camera app</b> and option for <b>purchasing the packages</b>. <br /><br/>
 		Purchases are implemented with Stripe. After purchase, user gets its generated wedding data which includes wedding flyer and wedding pin on their email. <br /><br/>
 		
